@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="record">
+<head>
+	<title>Agregar Disco</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body ng-app="node-jwt-angular" ng-controller="RecordController">
+
+		<h1>Insertar un nuevo disco</h1>
+		Titulo: <input type="text" name="title" id="title" ng-model="title" value=""/><br/>
+    Artista: <input type="artist" name="artist" id="artist" ng-model="artist" value=""/><br/>
+    Año: <input type="year" name="year" id="year" ng-model="year" value=""/><br/>
+		Portada: <input type="cover" name="cover" id="cover" ng-model="cover" value=""/><br/>
+    Genero: <input type="genre" name="genre" id="genre" ng-model="genre" value=""/><br/>
+
+		<button id="addBtn" class="btn btn-primary text-right" ng-click="addRecord()">Enviar Idea</button>
+
+		<h4>{{msg}}</h4>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-resource.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<script src="https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js"></script>
+		<script src="scripts/helpers/jwtHeaderHelper.js"></script>
+    <script src="scripts/controllers/Record.js"></script>
+</body>
+</html>
